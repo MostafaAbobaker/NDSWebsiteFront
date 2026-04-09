@@ -1,0 +1,30 @@
+@use '../abstracts' as *;
+.title-main-page {
+  font-size: rem(44);
+  font-size: clamp(1.5rem, 4vw + 0.8rem, 2.75rem);
+  font-weight: 700;
+  color: var( --secondary-color);
+  position: relative;
+  margin-bottom: rem(50);
+  &::after {
+    content: '';
+            position: absolute;
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+            bottom: rem(-15);
+            width: rem(75);
+            height: rem(40);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            border-width:rem(8) ;
+            border-style: solid;
+            border-color: transparent transparent var(--primary-color) transparent;}
+
+}
+
+
+[data-bs-theme="dark"] {
+  .title-main-page {
+    color: $white-color;
+  }
+}

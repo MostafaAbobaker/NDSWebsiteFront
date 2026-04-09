@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Sora:wght@100..800&display=swap');
+
+:root {
+  --font-family: 'Sora', sans-serif;
+  --font-en: 'Sora', sans-serif;
+  --font-ar: 'Cairo', sans-serif;
+}
+
+
+[dir="ltr"]{
+    --font-family: 'Sora', sans-serif;
+  }
+  [dir="rtl"]{
+    --font-family: 'Cairo', sans-serif;
+  }

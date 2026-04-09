@@ -1,0 +1,131 @@
+@use '../abstracts' as *;
+
+.navbar {
+  background-color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+  padding-block: rem(16);
+  &::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    top: 100%;
+    background-color: var(--white-color);
+    // background-color:#f00;
+    // border-radius: 50% 50% 0 0/100% 100% 0 0;
+/*     background: url(../../imgs/Rectangle3.svg) no-repeat center center;
+    background-size: cover;
+ */  height: 45px;
+  clip-path: polygon(
+    0% 30%,
+    10% 25%,
+    20% 18%,
+    30% 12%,
+    40% 7%,
+    50% 5%,
+    60% 7%,
+    70% 12%,
+    80% 18%,
+    90% 25%,
+    100% 30%,
+    100% 0%,
+    0% 0%
+    );
+    @media (max-width: 767.98px) {
+      display: none;
+    }
+  }
+  .navbar-toggler {
+    display: none;
+    @media (max-width: 991.98px){
+      display: block;
+      }
+  }
+  .offcanvas.offcanvas-end {
+    @media (min-width: 991.98px){
+      position: relative;
+      width:auto;
+      transform: unset;
+      visibility: visible;
+      border: none;
+      background-color: transparent;
+
+      flex-grow: 1;
+      .offcanvas-header {
+        display: none;
+      }
+      .offcanvas-body {
+        display: flex;
+      justify-content: space-between;
+      padding: 0;
+        .navbar-nav {
+          flex-direction: row !important;
+          justify-content: center !important;
+        }
+      }
+    }
+  }
+    .nav-item{
+
+      .nav-link{
+        padding-inline: rem(20);
+        color: var(--gray-90-color);
+        font-weight: 600;
+        transition: all 0.3s ease;
+        width: fit-content;
+        &.active{
+          position: relative;
+          &::after{
+            content: "";
+            position: absolute;
+            inset-inline-start: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 30px;
+            height: 20px;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            border-width:5px ;
+            border-style: solid;
+            border-color: transparent transparent var(--primary-color) transparent;
+          }
+        }
+      }
+    }
+    .action-button {
+      margin-inline-start: rem(45);
+      .text{
+        font-size: rem(12);
+        font-weight: 600;
+        margin-bottom: -5px;
+      }
+      .book-call {
+        font-weight: 600;
+      }
+    }
+}
+[data-bs-theme="dark"]  {
+  .navbar {
+    background-color: $gray-90-color;
+    &::after {
+      background-color: $gray-90-color;
+    }
+    .book-call {
+      border-color: $white-color;
+      color: $white-color;
+      &:hover {
+        background-color: $white-color;
+        color: $gray-90-color;
+      }
+    }
+  }
+}
+[lang="en" ]  {
+  .navbar {
+    .action-button {
+      .text {
+        position: relative;
+          top: -4px;
+      }
+    }
+  }
+}

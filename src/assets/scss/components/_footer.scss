@@ -1,0 +1,63 @@
+@use 'sass:color';
+@use '../abstracts' as *;
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css');
+footer.footer {
+  background-color: #{color.adjust($primary-color, $lightness: -29%) } ;//#27215A;
+  color: var(--white-color);
+  padding: rem(108) rem(20);
+  position: relative;
+  color: $white-color;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    height: 45px;
+    top: -1px;
+    background-color: var(--white-color);
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+
+  }
+  h4 {
+      color: $white-color;
+      margin-bottom: rem(27);
+  }
+  ul {
+    li {
+      margin-bottom: rem(16);
+      i {
+        margin-inline-end: rem(12);
+      }
+      a {
+        color: $white-color;
+        font-size: rem(16);
+        font-weight: 400;
+        transition: all 0.3s ease;
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+  img {
+    margin-bottom: rem(22);
+  }
+  .social-icons {
+    margin-bottom: rem(25);
+    a {
+      color: $white-color;
+      font-size: rem(32);
+      &:not(:last-child) {
+        margin-inline-end: rem(10);
+      }
+    }
+  }
+}
+
+
+[data-bs-theme="dark"] {
+  footer.footer {
+     &::before {
+      background-color: $gray-90-color;
+     }
+  }
+}

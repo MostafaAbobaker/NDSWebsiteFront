@@ -1,0 +1,61 @@
+@use '../abstracts' as *;
+.platform-applications {
+  padding: rem(80) rem(20);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* background: url(../../imgs/Rectangle4.svg) no-repeat center center;
+    background-size: cover; */
+    clip-path: polygon(
+    0% 30%,
+    10% 25%,
+    20% 18%,
+    30% 12%,
+    40% 7%,
+    50% 5%,
+    60% 7%,
+    70% 12%,
+    80% 18%,
+    90% 25%,
+    100% 30%,
+    100% 0%,
+    0% 0%
+    );
+    transform: rotate(180deg);
+    background-color: var(--white-color);
+    height: 45px;
+    top: -44px;
+
+  }
+  .content {
+    padding-inline-end: rem(22);
+  }
+  h4 {
+    font-size: rem(22);
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: rem(16);
+    text-transform: uppercase;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: rem(24);
+    margin-bottom: var(--s-24);
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 350px;
+  }
+}
+
+
+[data-bs-theme="dark"] {
+  .platform-applications {
+    &::before {
+      background-color: var(--gray-10-color);
+    }
+  }
+}

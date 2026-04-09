@@ -1,0 +1,175 @@
+@use 'sass:color';
+@use '../abstracts' as *;
+
+$main-color:#27215A;
+.pricing {
+  padding: rem(80) rem(10);
+  .nav-tabs {
+    background-color: var(--gray-20-color);
+    padding: rem(10) rem(12);
+    border-radius: rem(100);
+    width: fit-content;
+    margin: auto ;
+    margin-bottom: rem(28);
+    border: none;
+    position: relative;
+    @media (max-width: 575.98px){
+      padding: rem(10) rem(8);
+      margin: 0 auto;
+      margin-bottom: rem(28);
+      }
+      @media (max-width: 390.98px){
+      justify-content: space-between;
+
+      }
+    ~ p {
+      margin-bottom: rem(34);
+      font-size: rem(22);
+    }
+    .nav-link {
+      border-radius: rem(100);
+      font-weight: 600;
+      width: rem(120);
+      border: none;
+      display: block;
+      z-index: 2;
+      position: relative;
+      transition: 0.25s ease-out;
+      text-wrap: nowrap;
+      color: var(--gray-90-color);
+      @media (max-width: 575.98px){
+        width: auto;
+      font-size: rem(16);
+      }
+      @media (max-width: 475.98px){
+
+      }
+      @media (max-width: 390.98px){
+      font-size: rem(16);
+      width: auto;
+      }
+      &.active {
+        /* background-color: var(--primary-color);*/
+        color: $white-color;
+        background-color: transparent;
+        @media (max-width: 575.98px) {
+                    background-color: var(--primary-color);
+
+        }
+        @media (max-width: 390.98px){
+          }
+      }
+       &:not(.active) {
+        color: var(--gray-90-color);
+      }
+    }
+  }
+  .glider {
+    position: absolute;
+    display: flex;
+    height: rem(40);
+    width: rem(120);
+    background-color:  var(--primary-color);;
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+    @media (max-width: 575.98px){
+      width: 100px;
+      height: 31.5px;
+      display: none;
+      }
+    @media (max-width: 475.98px){
+      width: 80px;
+      height: 31.5px;
+
+      }
+    @media (max-width: 390.98px){
+      display: none;
+
+      }
+  }
+  .nav-tabs:has(.nav-item:first-child .active)  .glider  {
+        transform: translateX(0%);
+  }
+  .nav-tabs:has(.nav-item:nth-child(2) .active)  .glider  {
+        transform: translateX(100%);
+  }
+  .nav-tabs:has(.nav-item:nth-child(3) .active)  .glider  {
+        transform: translateX(200%);
+  }
+  .nav-tabs:has(.nav-item:nth-child(4) .active)  .glider  {
+        transform: translateX(300%);
+  }
+  .card {
+    background-color: var(--gray-20-color);
+    border-radius: var(--border-radius-xl);
+    border: none;
+    text-align: center;
+    padding-block: rem(27) ;
+    color: var(--gray-70-color);
+    // box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05)  ;
+    &.best-price {
+      background-color: #27215A;
+      color: $white-color;
+      position: relative;
+      overflow: hidden;
+      .label-text {
+        position: absolute;
+        text-transform: uppercase;
+        background-color: var(--primary-color);
+        color: $white-color;
+        font-size: rem(14);
+        font-weight: 600;
+        padding: rem(5) rem(15);
+        inset-inline-end: rem(-40);
+        transform: rotate(45deg);
+        padding-inline: rem(50);
+        top: rem(30);
+      }
+      h4 {
+        color: $white-color;
+      }
+      .price-number  {
+        .number {
+
+          color: var(--primary-color);
+        }
+        color: $gray-70-color;
+      }
+      ul {
+        li {
+          border-bottom-color: color.adjust($main-color, $lightness: 15%) !important;
+        }
+      }
+    }
+    h4 {
+      margin-bottom: rem(31);
+    }
+    .price-number {
+      background-color: $white-color;
+      margin-bottom: rem(14);
+      color: $gray-70-color;
+      span.number {
+        color: var(--primary-color);
+        font-weight: 600;
+        font-size: rem(50);
+
+      }
+    }
+    ul {
+      margin-bottom: rem(38);
+      padding-inline: rem(16);
+      li {
+        padding-block: rem(14);
+        font-size: rem(18);
+         &:not(:last-child) {
+          border-bottom: 1px solid var(--gray-30-color)
+         }
+      }
+    }
+    button {
+      font-weight: 600;
+      margin-inline: var(--s-24);
+    }
+  }
+}

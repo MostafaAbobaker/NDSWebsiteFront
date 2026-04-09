@@ -1,0 +1,47 @@
+@use "sass:color";
+@use "sass:map";
+@use "sass:list";
+
+@use "variables" as *;
+
+@function rem($px-value) {
+  @return calc($px-value / 16) + rem;
+}
+
+@each $name in $theme-colors {
+  .text-#{$name} {
+    color: var(--#{$name}-color) !important;
+  }
+
+  .border-#{$name} {
+    border-color: var(--#{$name}-color) !important;
+  }
+
+  .bg-#{$name} {
+    background-color: var(--#{$name}-color) !important;
+  }
+
+  .btn-#{$name} {
+    --opacity: 25%;
+    background-color: var(--#{$name}-color);
+    border-color: var(--#{$name}-color);
+    box-shadow: var(--box-shadow);
+
+    &:is(:hover, :focus, :active, :active:focus) {
+      background-color: color-mix(in srgb, var(--#{$name}-color), black 10%);
+      border-color: color-mix(in srgb, var(--#{$name}-color), black 10%);
+    }
+  }
+
+  .btn-outline-#{$name} {
+    --opacity: 25%;
+    border-color: var(--#{$name}-color);
+    color: var(--#{$name}-color);
+    box-shadow: var(--box-shadow);
+    &:is(:hover, :focus, :active, :active:focus) {
+      background-color: color-mix(in srgb, var(--#{$name}-color), black 5%);
+      border-color: color-mix(in srgb, var(--#{$name}-color), black 5%);
+      color: var(--white-color);
+    }
+  }
+}
