@@ -108,7 +108,7 @@ $radius-pill: 50rem;
 
 
 [data-bs-theme="dark"] {
-  --primary-color: #{color.scale($primary-color, $lightness: -50%) } ;//#3c27f5
+  --primary-color: #{color.adjust($primary-color, $lightness: -5%) } ;//#3c27f5
 
   --primary-color-rgb: 48, 26, 244;
   --secondary-color:#{color.adjust($secondary-color, $lightness: -5%) };// #f5f5f5;
