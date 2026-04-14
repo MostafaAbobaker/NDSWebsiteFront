@@ -18,11 +18,12 @@ body {
   font-family: var(--font-family);
   color: var(--gray-70-color);
 }
+.container {
+    --bs-gutter-x : 3rem;
+  }
 [data-bs-theme="dark"] {
   body  {
-
-      background-color: var(--gray-10-color);
-
+    background-color: var(--gray-10-color);
   }
 }
 .g-4 {

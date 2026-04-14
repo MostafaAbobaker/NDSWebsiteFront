@@ -1,9 +1,8 @@
 @use 'sass:color';
 @use '../abstracts' as *;
 
-$main-color:#27215A;
 .pricing {
-  padding: rem(80) rem(10);
+  padding-block: rem(70);
   .nav-tabs {
     background-color: var(--gray-20-color);
     padding: rem(10) rem(12);
@@ -47,6 +46,7 @@ $main-color:#27215A;
       @media (max-width: 390.98px){
       font-size: rem(16);
       width: auto;
+      padding-inline: rem(8);
       }
       &.active {
         /* background-color: var(--primary-color);*/
@@ -108,40 +108,7 @@ $main-color:#27215A;
     padding-block: rem(27) ;
     color: var(--gray-70-color);
     // box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05)  ;
-    &.best-price {
-      background-color: #27215A;
-      color: $white-color;
-      position: relative;
-      overflow: hidden;
-      .label-text {
-        position: absolute;
-        text-transform: uppercase;
-        background-color: var(--primary-color);
-        color: $white-color;
-        font-size: rem(14);
-        font-weight: 600;
-        padding: rem(5) rem(15);
-        inset-inline-end: rem(-40);
-        transform: rotate(45deg);
-        padding-inline: rem(50);
-        top: rem(30);
-      }
-      h4 {
-        color: $white-color;
-      }
-      .price-number  {
-        .number {
 
-          color: var(--primary-color);
-        }
-        color: $gray-70-color;
-      }
-      ul {
-        li {
-          border-bottom-color: color.adjust($main-color, $lightness: 15%) !important;
-        }
-      }
-    }
     h4 {
       margin-bottom: rem(31);
     }
@@ -149,6 +116,7 @@ $main-color:#27215A;
       background-color: $white-color;
       margin-bottom: rem(14);
       color: $gray-70-color;
+      padding: rem(16);
       span.number {
         color: var(--primary-color);
         font-weight: 600;
@@ -170,6 +138,42 @@ $main-color:#27215A;
     button {
       font-weight: 600;
       margin-inline: var(--s-24);
+    }
+    &.best-price {
+      background-color: var(--primary-dark-color);
+      color: $white-color;
+      position: relative;
+      overflow: hidden;
+      .label-text {
+        position: absolute;
+        text-transform: uppercase;
+        background-color: var(--primary-color);
+        color: $white-color;
+        font-size: rem(14);
+        font-weight: 600;
+        padding: rem(5) rem(15);
+        inset-inline-end: rem(-40);
+        transform: rotate(45deg);
+        padding-inline: rem(50);
+            top: 20px;
+        inset-inline-end: -70px;
+        width: 200px;
+      }
+      h4 {
+        color: $white-color;
+      }
+      .price-number  {
+        .number {
+
+          color: var(--primary-color);
+        }
+        color: $gray-70-color;
+      }
+      ul {
+        li {
+          border-bottom-color: color.scale($primary-color, $lightness: -30%);
+        }
+      }
     }
   }
 }

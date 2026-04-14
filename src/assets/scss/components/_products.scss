@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .products {
-  padding: rem(120) rem(20);
+  padding-block: rem(115) ;
   background-color: var(--gray-20-color);
   position: relative;
   &::before {
@@ -32,6 +32,9 @@
     img {
       margin-bottom: rem(26);
       border: var(--border-radius);
+      object-fit: fill;
+      max-height: rem(300);
+      border-radius: rem(16);
     }
     h4 {
       font-size: rem(24);

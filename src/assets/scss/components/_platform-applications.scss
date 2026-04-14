@@ -1,7 +1,8 @@
 @use '../abstracts' as *;
 .platform-applications {
-  padding: rem(80) rem(20);
+  padding: rem(70) 0;
   position: relative;
+
   &::before {
     content: '';
     position: absolute;
@@ -31,6 +32,10 @@
   }
   .content {
     padding-inline-end: rem(22);
+    @media (max-width: 991.98px) {
+      text-align: center;
+
+    }
   }
   h4 {
     font-size: rem(22);
@@ -43,6 +48,12 @@
     font-weight: 600;
     font-size: rem(24);
     margin-bottom: var(--s-24);
+  }
+  p {
+    @media (max-width: 991.98px) {
+      text-align: center;
+          text-align: justify;
+    }
   }
   img {
     width: 100%;
