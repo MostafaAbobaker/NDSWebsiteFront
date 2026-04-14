@@ -12,6 +12,9 @@ export class NavbarComponent implements OnInit {
   private readonly _themeService = inject(ThemeService);
   isFixed: boolean = false;
 
+  isHidden = false;
+  lastScrollTop = 0;
+
   langRtl:boolean = false;
   themeDark:string = 'light';
   activeSection: string = '';
@@ -51,11 +54,31 @@ scrollToTop(event: Event) {
 
 
   @HostListener('window:scroll', [])
-  onWindowScroll() {
+  onWindowScrollTop() {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
     this.isFixed = scrollY > 150;
   }
 
+
+ /*  @HostListener('window:scroll', [])
+    onWindowScroll() {
+
+    const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    this.isFixed = currentScroll > 150;
+    if (currentScroll < this.lastScrollTop &&  currentScroll != 0) {
+      // المستخدم بينزل لتحت + تعدى مسافة صغيرة → اخفي الـ navbar
+      this.isHidden = false;
+
+    } else  if(currentScroll != 0){
+      this.isFixed = false;
+    }else {
+      // المستخدم بيطلع لفوق → أظهر الـ navbar
+
+      this.isHidden = true;
+    }
+
+    this.lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  } */
 
   setActive(event: Event) {
   event.preventDefault();

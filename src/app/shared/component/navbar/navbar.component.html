@@ -1,5 +1,5 @@
 
-<nav class="navbar  sticky-top">
+<nav class="navbar "  [class.nav-fixed]="isFixed">
   <div class="container">
     <a class="navbar-brand" routerLink="/homePlus" fragment="homePlus" (click)="scrollToTop($event)">
       @if (themeDark === "light") {

@@ -4,6 +4,16 @@
   background-color: var(--white-color);
   transition: all 0.3s ease-in-out;
   padding-block: rem(16);
+  &.nav-fixed {
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    padding-block: rem(8);
+    z-index: 9999;
+  }
+  &.hidden-nav {
+    transform: translateY(-200%);
+  }
   &::after {
     content: '';
     position: absolute;
@@ -59,6 +69,7 @@
             &::after {
               display: none;
             }
+
           }
         }
       }
@@ -120,6 +131,12 @@
     }
     .action-button {
       margin-inline-start: rem(45);
+      .btn {
+        padding-inline: rem(12);
+        &:focus {
+          border: none;
+        }
+      }
       .text{
         font-size: rem(12);
         font-weight: 600;

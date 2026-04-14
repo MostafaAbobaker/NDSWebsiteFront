@@ -46,7 +46,6 @@
     .button-group {
       margin-bottom: rem(30);
       button {
-        padding: rem(12) var(--s-24);
 
         font-weight: 600;
         margin-inline-end: rem(8);
@@ -55,6 +54,8 @@
 
         i {
           margin-inline-end: rem(6);
+          position: relative;
+          top: 3px;
         }
         &.btn-outline-light {
           &:hover {

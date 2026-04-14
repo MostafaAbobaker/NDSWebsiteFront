@@ -26,6 +26,10 @@
         color: var(--primary-color);
         margin-inline-end: rem(9);
       }
+      span {
+        font-weight: 600;
+        color: var(--gray-90-color);
+      }
     }
     @media (max-width: 991.98px) {
     text-align: start;
