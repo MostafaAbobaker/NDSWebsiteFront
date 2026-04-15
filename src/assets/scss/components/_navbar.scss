@@ -49,13 +49,13 @@
   }
   .navbar-toggler {
     display: none;
-    @media (max-width: 991.98px) {
+    @media #{$max-l} {
       display: block;
     }
   }
   .offcanvas.offcanvas-end {
     width: rem(250);
-    @media (max-width: 991.98px) {
+    @media #{$max-l} {
       .navbar-nav {
         margin-bottom: rem(16);
         .nav-item {
@@ -198,10 +198,10 @@
 }
 [data-bs-theme="dark"] {
   .navbar {
-    background-color: $gray-90-color;
-    &::after {
+    // background-color: $gray-90-color;
+    /* &::after {
       background-color: $gray-90-color;
-    }
+    } */
     .book-call {
       border-color: $white-color;
       color: $white-color;

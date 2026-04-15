@@ -1,12 +1,12 @@
 @use '../abstracts' as *;
 .partners {
-  background-color: var(--primary-dark-color);
+  background-color: var(--primary-color-dark);
   // padding-block: rem(115) ;
   position: relative;
   color: var(--white-color);
   .curve {
     path{
-      fill:var(--primary-dark-color);
+      fill:var(--primary-color-dark);
     }
 
   }
@@ -40,7 +40,7 @@
   }
   .partner-card {
     background-color: $white-color;
-    border-radius: var(--border-radius-xl);
+    border-radius: $radius-lg;
     height:  100%;
     padding-block: 50px;
     text-align: center;
@@ -54,7 +54,7 @@
       object-position: center;
       object-fit: contain;
     }
-     @media (max-width: 575.98px) {
+     @media #{$max-sm} {
         min-height: 120px;
     img {
       max-width: 100px;

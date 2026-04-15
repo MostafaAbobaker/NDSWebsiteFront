@@ -36,7 +36,7 @@
   }
   .content {
     padding-inline-end: rem(22);
-    @media (max-width: 991.98px) {
+    @media #{$max-l} {
       text-align: center;
 
     }
@@ -54,7 +54,7 @@
     margin-bottom: var(--s-24);
   }
   p {
-    @media (max-width: 991.98px) {
+    @media #{$max-l} {
       text-align: center;
           text-align: justify;
     }

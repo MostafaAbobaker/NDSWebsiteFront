@@ -2,11 +2,19 @@
 @use "sass:map";
 @use "sass:list";
 
+
+
 @use "variables" as *;
 
+
+// Convert PX To REM
+
 @function rem($px-value) {
-  @return calc($px-value / 16) + rem;
+	@return calc($px-value / 16) + rem;
 }
+
+// Line Clamp
+
 @for $i from 1 through 5 {
     .line-clamp-#{$i}{
         display: -webkit-box;
@@ -16,40 +24,113 @@
         overflow: hidden;
     }
 }
-@each $name in $theme-colors {
-  .text-#{$name} {
-    color: var(--#{$name}-color) !important;
-  }
 
-  .border-#{$name} {
-    border-color: var(--#{$name}-color) !important;
-  }
+// Buttons & BG colors
 
-  .bg-#{$name} {
-    background-color: var(--#{$name}-color) !important;
-  }
-
-  .btn-#{$name} {
-    --opacity: 25%;
-    background-color: var(--#{$name}-color);
-    border-color: var(--#{$name}-color);
-    box-shadow: var(--box-shadow);
-
-    &:is(:hover, :focus, :active, :active:focus) {
-      background-color: color-mix(in srgb, var(--#{$name}-color), black 10%);
-      border-color: color-mix(in srgb, var(--#{$name}-color), black 10%);
+@each $key, $value in $btn-bg-colors {
+    .text-#{$key} {
+        color: $value !important;
     }
-  }
-
-  .btn-outline-#{$name} {
-    --opacity: 25%;
-    border-color: var(--#{$name}-color);
-    color: var(--#{$name}-color);
-    box-shadow: var(--box-shadow);
-    &:is(:hover, :focus, :active, :active:focus) {
-      background-color: color-mix(in srgb, var(--#{$name}-color), black 5%);
-      border-color: color-mix(in srgb, var(--#{$name}-color), black 5%);
-      color: var(--white-color);
+    .border-#{$key} {
+        border-color: $value !important;
     }
-  }
+    .bg-#{$key} {
+        background-color: $value !important;
+    }
+    .btn-#{$key} {
+        background-color: $value;
+        border-color: $value;
+        box-shadow: 0 2px 6px 0 rgba($value,.25);
+        &:is(:hover, :focus, :active, :active:focus) {
+            //background-color: darken($value, 5%);
+            //border-color: darken($value, 5%);
+            background-color: color.adjust($value, $lightness: -5%);
+            border-color: color.adjust($value, $lightness: -5%);
+        }
+    }
+    .btn-outline-#{$key} {
+        border-color: $value;
+        color: $value;
+        box-shadow: 0 2px 6px 0 rgba($value,.25);
+        &:is(:hover, :focus, :active, :active:focus) {
+            //background-color: darken($value, 5%);
+            //border-color: darken($value, 5%);
+            background-color: color.adjust($value, $lightness: -5%);
+            border-color: color.adjust($value, $lightness: -5%);
+        }
+    }
+    .btn-link , .nav-link{
+        color: var(--primary-color);
+        &:is(:hover, :focus, :active, :active:focus) {
+            color: var(--gray-color-50);
+        }
+    }
+}
+
+[data-bs-theme="dark"]{
+    @each $key, $value in $btn-bg-colors {
+        .text-#{$key} {
+            //color: lighten($value, 10%) !important;
+            color: color.adjust($value, $lightness: 10%) !important;
+        }
+        .border-#{$key} {
+            //border-color: darken($value, 10%) !important;
+            border-color: color.adjust($value, $lightness: -10%) !important;
+        }
+        .bg-#{$key} {
+            //background-color: darken($value, 10%) !important;
+            background-color: color.adjust($value, $lightness: -10%) !important;
+        }
+        .btn-#{$key} {
+            //background-color: darken($value, 10%);
+            //border-color: darken($value, 10%);
+            background-color: color.adjust($value, $lightness: -10%);
+            border-color: color.adjust($value, $lightness: -10%);
+        }
+        .text-secondary{
+            //color: lighten($value, 30%) !important;
+            color: color.adjust($value, $lightness: 30%) !important;
+        }
+        .border-secondary{
+            //border-color: lighten($value, 10%) !important;
+            border-color: color.adjust($value, $lightness: 10%) !important;
+        }
+        .bg-secondary{
+            //background-color: lighten($value, 10%) !important;
+            background-color: color.adjust($value, $lightness: 10%) !important;
+        }
+        .btn-secondary{
+            //background-color: lighten($value, 10%);
+            background-color: color.adjust($value, $lightness: 10%);
+            //border-color: lighten($value, 10%);
+            border-color: color.adjust($value, $lightness: 10%);
+            &:is(:hover, :focus, :active, :active:focus) {
+                //background-color: lighten($value, 15%);
+                //border-color: lighten($value, 15%);
+                background-color: color.adjust($value, $lightness: 15%);
+                border-color: color.adjust($value, $lightness: 15%);
+            }
+        }
+        .btn-outline-secondary{
+            //border-color: lighten($value, 30%);
+            //color: lighten($value, 30%);
+            border-color: color.adjust($value, $lightness: 30%);
+            color: color.adjust($value, $lightness: 30%);
+        }
+        .btn-link , .nav-link{
+            //color: lighten($primary-color, 5%);
+            color: color.adjust($primary-color, $lightness: 5%);
+            &:is(:hover, :focus, :active, :active:focus) {
+                color: var(--gray-color-50);
+            }
+        }
+    }
+}
+
+// Animation Delay
+
+@for $i from 0 through 10 {
+    .delay-#{$i}{
+        animation-delay: calc($i/8)+s;
+    }
 }

@@ -1,14 +1,14 @@
 @use 'sass:color';
 @use '../abstracts' as *;
 footer.footer {
-  background-color: var(--primary-dark-color);//#27215A;
+  background-color: var(--primary-color-dark);//#27215A;
   color: var(--white-color);
 
   position: relative;
   color: $white-color;
    .curve {
     path {
-      fill:var(--primary-dark-color);
+      fill:var(--primary-color-dark);
     }
 
 
@@ -61,7 +61,7 @@ footer.footer {
       }
     }
   }
-  @media (max-width: 767.98px) {
+  @media #{$max-md} {
     text-align: center;
     .nav-links {
       a {

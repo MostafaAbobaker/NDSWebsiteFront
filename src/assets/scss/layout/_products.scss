@@ -2,11 +2,11 @@
 
 .products {
   // padding-block: rem(115) ;
-  background-color: var(--gray-20-color);
+  background-color: var(--gray-10-color);
   position: relative;
   .curve {
     path {
-      fill: var(--gray-20-color);;
+      fill: var(--gray-10-color);;
     }
 
   }
@@ -36,15 +36,14 @@
     height: 100%;
     border: none;
     box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius-xl);
+    border-radius: $radius-lg;
     text-align: center;
     img {
       margin-bottom: rem(26);
-      border: var(--border-radius);
       object-fit:cover;
       height: rem(256);
-      border-radius: rem(16);
-      @media (max-width: 991.98px) {
+      border-radius: $radius;
+      @media #{$max-l} {
         height: rem(185);
       }
     }

@@ -6,10 +6,10 @@ body {
   scroll-behavior: smooth;
 }
 html {
-  @media (max-width: 991.98px) {
+  @media #{$max-l} {
     font-size: 95%;
   }
-  @media (max-width: 767.98px) {
+  @media #{$max-md} {
     font-size: 90%;
   }
 }
@@ -21,11 +21,7 @@ body {
 .container {
     --bs-gutter-x : 3rem;
   }
-[data-bs-theme="dark"] {
-  body  {
-    background-color: var(--gray-20-color);
-  }
-}
+
 .g-4 {
   --bs-gutter-y: var(--s-24);
   --bs-gutter-x: var(--s-24);
@@ -76,7 +72,7 @@ ul {
       height: 100%;
     }
     path {
-      fill: #fff;
+      fill: var(--white-color);
     }
   }
 .curve-2{ transform: scaleY(-1); margin-top: 100px; top: unset; bottom: 100%;}
