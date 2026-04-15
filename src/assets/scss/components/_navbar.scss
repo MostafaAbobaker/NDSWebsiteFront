@@ -1,44 +1,47 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .navbar {
   background-color: var(--white-color);
   transition: all 0.3s ease-in-out;
   padding-block: rem(16);
-  &.nav-fixed {
-    position: fixed;
-    top: 0;
-    inset-inline: 0;
-    padding-block: rem(8);
-    z-index: 9999;
-  }
+
+
   &.hidden-nav {
     transform: translateY(-200%);
   }
+  /* .curve {
+    top: 100%;
+    position: absolute;
+    background-color: transparent;
+
+  } */
   &::after {
-    content: '';
+    display: none;
+    content: "";
     position: absolute;
     inset-inline: 0;
     top: 99%;
     background-color: var(--white-color);
     // background-color:#f00;
     // border-radius: 50% 50% 0 0/100% 100% 0 0;
-/*     background: url(../../imgs/Rectangle3.svg) no-repeat center center;
+    /*     background: url(../../imgs/Rectangle3.svg) no-repeat center center;
     background-size: cover;
- */  height: 45px;
-  clip-path: polygon(
-    0% 30%,
-    10% 25%,
-    20% 18%,
-    30% 12%,
-    40% 7%,
-    50% 5%,
-    60% 7%,
-    70% 12%,
-    80% 18%,
-    90% 25%,
-    100% 30%,
-    100% 0%,
-    0% 0%
+ */
+    height: 45px;
+    clip-path: polygon(
+      0% 30%,
+      10% 25%,
+      20% 18%,
+      30% 12%,
+      40% 7%,
+      50% 5%,
+      60% 7%,
+      70% 12%,
+      80% 18%,
+      90% 25%,
+      100% 30%,
+      100% 0%,
+      0% 0%
     );
     /* @media (max-width: 767.98px) {
       display: none;
@@ -46,41 +49,47 @@
   }
   .navbar-toggler {
     display: none;
-    @media (max-width: 991.98px){
+    @media (max-width: 991.98px) {
       display: block;
-      }
+    }
   }
   .offcanvas.offcanvas-end {
     width: rem(250);
     @media (max-width: 991.98px) {
       .navbar-nav {
         margin-bottom: rem(16);
-        .nav-link {
-          padding-block: rem(16);
-          &::after {
-              display: none;
+        .nav-item {
+          &:not(:last-child) {
+            .nav-link {
+
+              border-bottom: 1px solid var(--gray-30-color);
             }
-          &.active {
-            background-color: var(--primary-color);
-            color: $white-color;
-            border-radius: $radius-pill;
-            display: block;
+          }
+        }
+        .nav-link {
+          padding: rem(8) rem(16);
+          display: block;
             width: 100%;
+          &::after {
+            display: none;
+          }
+          &.active {
+            border-inline-start: 5px solid var(--primary-color);
+
             &::after {
               display: none;
             }
-
           }
         }
       }
-      .btn  {
+      .btn {
         display: block;
         width: 100%;
       }
     }
-    @media (min-width: 991.98px){
+    @media (min-width: 991.98px) {
       position: relative;
-      width:auto;
+      width: auto;
       transform: unset;
       visibility: visible;
       border: none;
@@ -92,8 +101,8 @@
       }
       .offcanvas-body {
         display: flex;
-      justify-content: space-between;
-      padding: 0;
+        justify-content: space-between;
+        padding: 0;
         .navbar-nav {
           flex-direction: row !important;
           justify-content: center !important;
@@ -102,55 +111,92 @@
     }
   }
 
-    .nav-item{
-
-      .nav-link{
-        padding-inline: rem(20);
-        color: var(--gray-90-color);
-        font-weight: 600;
-        transition: all 0.3s ease;
-        width: fit-content;
-        &.active{
-          position: relative;
-          &::after{
-            content: "";
-            position: absolute;
-            inset-inline-start: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-            width: 30px;
-            height: 20px;
-            transition: all 0.3s ease;
-            border-radius: 50%;
-            border-width:5px ;
-            border-style: solid;
-            border-color: transparent transparent var(--primary-color) transparent;
-          }
+  .nav-item {
+    .nav-link {
+      padding-inline: rem(20);
+      color: var(--gray-90-color);
+      font-weight: 600;
+      transition: all 0.3s ease;
+      width: fit-content;
+      &.active {
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          inset-inline-start: 50%;
+          transform: translateX(-50%);
+          bottom: -1px;
+          width: 30px;
+          height: 20px;
+          transition: all 0.3s ease;
+          border-radius: 50%;
+          border-width: 5px;
+          border-style: solid;
+          border-color: transparent transparent var(--primary-color) transparent;
         }
       }
+    }
+  }
+  .action-button {
+    margin-inline-start: rem(45);
+    .btn {
+      padding-inline: rem(12);
+      &:focus {
+        border: none;
+      }
+    }
+    .text {
+      font-size: rem(12);
+      font-weight: 600;
+      margin-bottom: -5px;
+    }
+    i {
+      font-size: rem(22);
+    }
+    @media (max-width: 1199.98px) {
+      margin-inline-start: rem(16);
+      .btn {
+        padding-inline: rem(10);
+      }
+    }
+  }
+  &.nav-fixed {
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    padding-block: rem(8);
+    z-index: 9999;
+    box-shadow: $box-shadow;
+    .curve {
+    height: 22px;
+
+  }
+    .navbar-brand {
+      img {
+        transform: scale(.85);
+        transition: all 0.3s ease-in-out;
+        height: 35px;
+      }
+    }
+    .nav-link {
+      padding-block: rem(4);
+      font-size: rem(14);
+      &::after {
+        bottom: -2px;
+      }
+    }
+    .book-call {
+      font-size: rem(14);
+      padding-block: 4px;
     }
     .action-button {
-      margin-inline-start: rem(45);
-      .btn {
-        padding-inline: rem(12);
-        &:focus {
-          border: none;
-        }
-      }
-      .text{
-        font-size: rem(12);
-        font-weight: 600;
-        margin-bottom: -5px;
-      }
       i {
-        font-size: rem(22);
+        font-size: rem(18);
       }
-      @media (max-width: 1199.98px) { margin-inline-start: rem(35); .btn {
-        padding-inline: rem(10);
-      } }
     }
+  }
 }
-[data-bs-theme="dark"]  {
+[data-bs-theme="dark"] {
   .navbar {
     background-color: $gray-90-color;
     &::after {
@@ -166,12 +212,12 @@
     }
   }
 }
-[lang="en" ]  {
+[lang="en"] {
   .navbar {
     .action-button {
       .text {
         position: relative;
-          top: -8px;
+        top: -8px;
       }
     }
   }

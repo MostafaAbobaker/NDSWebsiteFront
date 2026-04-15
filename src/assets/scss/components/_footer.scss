@@ -3,10 +3,18 @@
 footer.footer {
   background-color: var(--primary-dark-color);//#27215A;
   color: var(--white-color);
-  padding-block: rem(115) rem(70) ;
+
   position: relative;
   color: $white-color;
+   .curve {
+    path {
+      fill:var(--primary-dark-color);
+    }
+
+
+  }
   &::before {
+    display: none;
     content: '';
     position: absolute;
     inset: 0;
@@ -16,6 +24,7 @@ footer.footer {
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
 
   }
+
   h4 {
       color: $white-color;
       margin-bottom: rem(27);
@@ -33,10 +42,11 @@ footer.footer {
         font-weight: 400;
         transition: all 0.3s ease;
         &:hover {
-          color: var(--primary-color);
+          color: color.adjust($primary-color, $lightness: 30%);;
         }
       }
     }
+
   }
   img {
     margin-bottom: rem(25);
@@ -48,6 +58,23 @@ footer.footer {
       font-size: rem(32);
       &:not(:last-child) {
         margin-inline-end: rem(10);
+      }
+    }
+  }
+  @media (max-width: 767.98px) {
+    text-align: center;
+    .nav-links {
+      a {
+        text-align: center;
+        display: block;
+        width: 100%;
+      }
+    }
+    .contact-links {
+      display: table;
+      margin: auto;
+      a {
+        text-align: start;
       }
     }
   }

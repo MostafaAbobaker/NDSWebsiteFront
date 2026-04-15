@@ -7,7 +7,15 @@
 @function rem($px-value) {
   @return calc($px-value / 16) + rem;
 }
-
+@for $i from 1 through 5 {
+    .line-clamp-#{$i}{
+        display: -webkit-box;
+        -webkit-line-clamp: #{$i};
+        line-clamp: #{$i};
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
 @each $name in $theme-colors {
   .text-#{$name} {
     color: var(--#{$name}-color) !important;

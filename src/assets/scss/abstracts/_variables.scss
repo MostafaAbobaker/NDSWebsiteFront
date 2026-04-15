@@ -42,7 +42,7 @@ $fs-12: $fs-main * .75;
 $fs-10: $fs-main * 0.625;
 //  Padding
 
-$padding-x: 1.5rem;
+$padding-x: 1.25rem;
 $padding-y: .5rem;
 $padding: $padding-y $padding-x;
 
@@ -61,7 +61,7 @@ $s-24: 1.5rem;
 
 //  Radius
 
-$radius: .4rem;//6.4px
+$radius: 0.75rem;//12px
 $radius-sm: $radius*.75;//4.8px
 $radius-lg: $radius*1.25;//8px
 $radius-pill: 50rem;//800
@@ -97,10 +97,10 @@ $radius-pill: 50rem;//800
 
 
 
-  @media (min-width: 992px) {
+  @media (max-width: 992px) {
     --s-24: 1.25rem;
   }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     --s-24: 1rem;
   }
 
@@ -141,3 +141,15 @@ $theme-colors: (
   "light",
   "dark"
 );
+
+
+//  shadow
+
+$box-shadow: 0 0 15px 0 rgba(48,46,56,.06);
+$box-shadow-l: 0px 10px 34px -15px rgba(48, 46, 56, 0.24);
+$btn-shadow: 0 2px 6px 0 rgba(48,46,56,.06);
+$focus-shadow: 0 0 0 4px rgba($color: $primary-color, $alpha: .2);
+
+//
+
+$transition-3s:all .3s;

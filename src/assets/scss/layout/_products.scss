@@ -1,10 +1,17 @@
 @use '../abstracts' as *;
 
 .products {
-  padding-block: rem(115) ;
+  // padding-block: rem(115) ;
   background-color: var(--gray-20-color);
   position: relative;
+  .curve {
+    path {
+      fill: var(--gray-20-color);;
+    }
+
+  }
   &::before {
+    display: none;
     content: '';
     position: absolute;
     inset: 0;
@@ -14,6 +21,7 @@
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
   }
   &::after{
+    display: none;
     content: '';
     position: absolute;
     inset-inline: 0;
@@ -29,12 +37,16 @@
     border: none;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius-xl);
+    text-align: center;
     img {
       margin-bottom: rem(26);
       border: var(--border-radius);
-      object-fit: fill;
-      max-height: rem(300);
+      object-fit:cover;
+      height: rem(256);
       border-radius: rem(16);
+      @media (max-width: 991.98px) {
+        height: rem(185);
+      }
     }
     h4 {
       font-size: rem(24);

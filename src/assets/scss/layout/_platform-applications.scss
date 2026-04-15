@@ -1,9 +1,13 @@
 @use '../abstracts' as *;
 .platform-applications {
-  padding: rem(70) 0;
+  // padding: rem(70) 0;
   position: relative;
-
+  /* .curve{
+    position: absolute;
+    bottom: 100%;
+  } */
   &::before {
+    display: none;
     content: '';
     position: absolute;
     inset: 0;

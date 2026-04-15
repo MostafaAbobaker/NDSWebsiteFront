@@ -2,7 +2,7 @@
 @use '../abstracts' as *;
 
 .pricing {
-  padding-block: rem(70);
+  // padding-block: rem(70);
   .nav-tabs {
     background-color: var(--gray-20-color);
     padding: rem(10) rem(12);
@@ -46,7 +46,7 @@
       @media (max-width: 390.98px){
       font-size: rem(16);
       width: auto;
-      padding-inline: rem(8);
+      padding-inline: rem(9);
       }
       &.active {
         /* background-color: var(--primary-color);*/
@@ -108,7 +108,7 @@
     padding-block: rem(27) ;
     color: var(--gray-70-color);
     // box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.05)  ;
-
+    height: 100%;
     h4 {
       margin-bottom: rem(31);
     }
@@ -138,6 +138,7 @@
     button {
       font-weight: 600;
       margin-inline: var(--s-24);
+      margin-top: auto;
     }
     &.best-price {
       background-color: var(--primary-dark-color);
@@ -171,7 +172,7 @@
       }
       ul {
         li {
-          border-bottom-color: color.scale($primary-color, $lightness: -30%);
+          border-bottom-color: color.adjust($primary-color, $lightness: -20%);
         }
       }
     }

@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 .schedule-demo{
-  padding-block: rem(70) ;
+  // padding-block: rem(70) ;
   @media (max-width: 991.98px) {
     text-align: center;
   }
@@ -33,6 +33,10 @@
     }
     @media (max-width: 991.98px) {
     text-align: start;
+    display: table;
+    margin: 0 auto rem(16);
+
   }
+
   }
 }

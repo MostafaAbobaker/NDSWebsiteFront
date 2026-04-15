@@ -1,9 +1,15 @@
 @use '../abstracts' as *;
 .partners {
   background-color: var(--primary-dark-color);
-  padding-block: rem(115) ;
+  // padding-block: rem(115) ;
   position: relative;
   color: var(--white-color);
+  .curve {
+    path{
+      fill:var(--primary-dark-color);
+    }
+
+  }
   .title-main-page {
     color:$white-color;
     & ~ p {
@@ -13,6 +19,7 @@
     }
   }
   &::before{
+    display: none;
         content: "";
     position: absolute;
     inset: 0;
@@ -22,6 +29,7 @@
     border-radius: 0 0 50% 50% / 0 0 100% 100%;
   }
   &::after {
+    display: none;
     content: '';
     position: absolute;
     inset-inline: 0;
