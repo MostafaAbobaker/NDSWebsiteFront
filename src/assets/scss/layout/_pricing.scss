@@ -17,7 +17,7 @@
       margin: 0 auto;
       margin-bottom: rem(28);
       }
-      @media (max-width: 390.98px){
+      @media #{$max-xsm}{
       justify-content: space-between;
 
       }
@@ -40,10 +40,8 @@
         width: auto;
       font-size: rem(16);
       }
-      @media (max-width: 475.98px){
 
-      }
-      @media (max-width: 390.98px){
+      @media #{$max-xsm}{
       font-size: rem(16);
       width: auto;
       padding-inline: rem(9);
@@ -56,8 +54,7 @@
                     background-color: var(--primary-color);
 
         }
-        @media (max-width: 390.98px){
-          }
+
       }
        &:not(.active) {
         color: var(--gray-90-color);
@@ -83,7 +80,7 @@
       height: 31.5px;
 
       }
-    @media (max-width: 390.98px){
+    @media #{$max-xsm}{
       display: none;
 
       }
