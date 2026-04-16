@@ -175,3 +175,42 @@
     }
   }
 }
+
+
+[dir="rtl"] {
+  .pricing {
+    .nav-link{
+width: rem(140);
+    }
+    .glider {
+      width: rem(140);
+    }
+    .nav-tabs:has(.nav-item:first-child .active)  .glider  {
+        transform: translateX(0%);
+  }
+  .nav-tabs:has(.nav-item:nth-child(2) .active)  .glider  {
+        transform: translateX(-100%);
+  }
+  .nav-tabs:has(.nav-item:nth-child(3) .active)  .glider  {
+        transform: translateX(-200%);
+  }
+  .nav-tabs:has(.nav-item:nth-child(4) .active)  .glider  {
+        transform: translateX(-300%);
+  }
+  .card {
+    h4 {
+      font-weight: 700;
+    }
+    .price-number {
+      .number {
+        font-weight: 700;
+      }
+    }
+    &.best-price {
+      .label-text {
+            transform: rotate(-45deg);
+      }
+    }
+  }
+  }
+}

@@ -214,11 +214,45 @@
 }
 [lang="en"] {
   .navbar {
+
     .action-button {
       .text {
         position: relative;
-        top: -8px;
+        top: -7px;
       }
     }
+  }
+}
+[dir="rtl"] {
+  .navbar {
+    .nav-item {
+      .nav-link{
+        font-weight: 700;
+        &.active{
+          &::after {
+                transform: translateX(50%);
+          }
+        }
+      }
+    }
+    .action-button {
+      .text {
+        position: relative;
+        top: -5px;
+      }
+    }
+
+    .offcanvas.offcanvas-end {
+      right: unset;
+      inset-inline-end: 0;
+      transform: none;
+    }
+
+   /*  .offcanvas.offcanvas-end {
+      transform: translateX(-100%);
+    }
+    .offcanvas.hiding, .offcanvas.show, .offcanvas.showing {
+      transform: translateX(0);
+    } */
   }
 }

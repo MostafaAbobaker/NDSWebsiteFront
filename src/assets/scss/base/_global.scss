@@ -21,7 +21,14 @@ body {
 .container {
     --bs-gutter-x : 3rem;
   }
-
+.me-2 {
+    margin-right: unset !important;
+    margin-inline-end: .5rem !important;
+}
+.ms-auto {
+    margin-left: unset !important;
+    margin-inline-start: auto !important;
+}
 .g-4 {
   --bs-gutter-y: var(--s-24);
   --bs-gutter-x: var(--s-24);

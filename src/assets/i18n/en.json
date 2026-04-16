@@ -1,0 +1,114 @@
+{
+  "title":"Hello World!",
+  "navbar":{
+    "about":"About Notify",
+    "products":"Products",
+    "pricing":"Pricing",
+    "partners":"Partners",
+    "bookCall":"Book a Call"
+  },
+  "mainBanner":{
+    "title":"Expand your reach to customers anytime, anywhere, on any device",
+    "description":"Deliver seamless engagement across every channel and scenario — powered by our platform or yours",
+    "btn1":"Schedule a Demo",
+    "btn2":"Watch Video",
+    "info1":"No credit card required",
+    "info2":"Flexible pricing"
+  },
+  "about":{
+    "titleSecondary":"Platform Applications",
+    "title":"Empowering businesses to grow, retain customers, and increase lifetime value with personalized omnichannel engagement",
+    "description":"Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+  },
+  "products":{
+    "title":"Products",
+    "productOne":{
+      "title":"SMS",
+      "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures."
+    },
+    "productTwo":{
+      "title":"E-mail",
+      "description":"this a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using."
+    },
+    "productThree":{
+      "title":"SMS",
+      "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures."
+    },
+    "productFour":{
+      "title":"SMS",
+      "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures."
+    }
+  },
+  "pricing":{
+    "title":"Pricing",
+    "sms":"SMS",
+    "whatsApp":"WhatsApp",
+    "email":"E-mail",
+    "webPush":"Web Push",
+    "description":"Choose the perfect plan for your business needs",
+    "buyNow":"Buy Now!",
+    "planOne":{
+      "title":"Standard",
+      "month":"month",
+      "listOne":"Limited AI Segmentation",
+      "listTwo":"Personalization",
+      "listThree":"Campaign Manager",
+      "listFour":"User Role Management",
+      "listFive":"24/7 Support"
+    },
+    "planTwo":{
+      "title":"Business",
+      "month":"month",
+      "popular":"popular",
+      "listOne":"Verification Model",
+      "listTwo":"AI Segmentation",
+      "listThree":"Unlimited Customer Journeys",
+      "listFour":"Advanced Analytics",
+      "listFive":"Customer Data Management"
+    },
+    "planThree":{
+      "title":"Premium",
+      "month":"month",
+      "listOne":"Hyper Personalization",
+      "listTwo":"Product Recommendation",
+      "listThree":"Chat Management",
+      "listFour":"24/7 Support",
+      "listFive":"Cohort Analytics"
+    }
+  },
+  "partners":{
+    "title":"Partners",
+    "description":"The results speak for themselves — over 20 companies build with Notify"
+  },
+  "demo":{
+    "title":"Schedule a Demo",
+    "titleSecondary":"Why Book a Demo",
+    "titleMain":"Enabling businesses to increase engagement and maximize their return on investment",
+    "description":"Connect with our team to:",
+    "demoListOne":" Maximize your engagement ROI with ",
+    "demoListTwo":"Choose the right pricing plan for your business.",
+    "demoListThree":"Explore industry-specific use cases.",
+    "demoListFour":"Get expert answers to all your  ",
+    "demoListFourQuestions":"questions.",
+    "notify":"Notify",
+    "form":{
+      "firstName":"First Name",
+      "lastName":"Last Name",
+      "jobTitle":"Job Title",
+      "businessEmail":"Business E-mail",
+      "phoneNumber":"Phone Number",
+      "companyName":"Company Name",
+      "bookCall":"Book a Call"
+    }
+  },
+  "footer":{
+    "quickLinks":"Quick Links",
+    "about":"About Notify",
+    "products":"Products",
+    "pricing":"Pricing",
+    "partners":"Partners",
+    "getTouch":"Get in touch",
+    "address":"Building B4, 5th Floor, Capital Business Park, Sheikh Zayed City, 6th October,Giza, Egypt.",
+    "copyRight":"Notify © 2026.All Rights Reserved."
+  }
+}

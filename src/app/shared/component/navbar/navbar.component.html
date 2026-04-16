@@ -22,38 +22,38 @@
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
           <a class="nav-link" [class.active]="activeSection === 'about'" routerLink="/about" fragment="about"
-            (click)="setActive($event)">About Notify</a>
+            (click)="setActive($event)">{{"navbar.about" | translate}}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [class.active]="activeSection === 'products'" routerLink="/products" fragment="products"
-            (click)="setActive($event)">Products</a>
+            (click)="setActive($event)"> {{"navbar.products" | translate}}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [class.active]="activeSection === 'pricing'" routerLink="/pricing" fragment="pricing"
-            (click)="setActive($event)">Pricing</a>
+            (click)="setActive($event)">{{"navbar.pricing" | translate}}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" [class.active]="activeSection === 'partners'" routerLink="/partners" fragment="partners"
-            (click)="setActive($event)">Partners</a>
+            (click)="setActive($event)">{{"navbar.partners" | translate}}</a>
         </li>
         </ul>
         <div class="d-flex " role="search">
         <a class="btn btn-outline-primary book-call" routerLink="/bookCall" fragment="bookCall"
           (click)="setActive($event)">
-          Book a Call</a>
+          {{"navbar.bookCall" | translate}}</a>
       </div>
       </div>
     </div>
     <!--  -->
     <div class="action-button d-inline-flex">
-      @if(langRtl){
+      @if(lang == "ar"){
 
-          <button (click)="toggleLang()" class="btn font-en">
+          <button (click)="toggleLang('en')" class="btn font-en">
             <i class="fi fi-rr-globe me-1"></i>
             <span class="text">En</span>
           </button>
         } @else {
-          <button (click)="toggleLang()" class="btn ">
+          <button (click)="toggleLang('ar')" class="btn ">
             <i class="fi fi-rr-globe me-1"></i>
             <span class="text">ع</span>
           </button>

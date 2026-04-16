@@ -1,15 +1,19 @@
 import { Component, HostListener, inject, OnInit } from '@angular/core';
 import { ThemeService } from '../../services/theme.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent implements OnInit {
-
+  private readonly _languageService = inject(LanguageService)
   private readonly _themeService = inject(ThemeService);
+
+  lang = this._languageService.language()
   isFixed: boolean = false;
 
   isHidden = false;
@@ -26,7 +30,9 @@ export class NavbarComponent implements OnInit {
   }
 
 
-  toggleLang(){
+  toggleLang(langName : string){
+    this._languageService.toggleLanguage(langName);
+    this.lang = langName;
     this.langRtl = !this.langRtl;
   }
   toggleTheme(themeName: 'light' | 'dark'){

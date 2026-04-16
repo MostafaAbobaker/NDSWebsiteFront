@@ -53,6 +53,7 @@ footer.footer {
   }
   .social-icons {
     margin-bottom: rem(25);
+    display: flex;
     a {
       color: $white-color;
       font-size: rem(32);

@@ -3,3 +3,8 @@
 .btn{ font-size: $fs-main; padding: $padding;  font-weight: 600; border-radius: $radius-pill;}
 .btn-sm{ font-size: $fs-sm; padding: $padding-sm; font-weight: 600; border-radius:$radius-pill;}
 .btn-lg{ font-size: $fs-lg; padding: $padding-lg; font-weight: 600; border-radius: $radius-pill;}
+[dir="rtl"] {
+  .btn{   font-weight: 700;}
+.btn-sm{  font-weight: 700;}
+.btn-lg{ font-weight: 700;}
+}

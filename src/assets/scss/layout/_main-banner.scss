@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 
-.main-panner {
+.main-banner {
   background: url('../../imgs/banner-image.png') no-repeat center center;
   background-size: cover  ;
   height: calc(100vh - 84px);
@@ -105,5 +105,11 @@
         }
       }
     }
+  }
+}
+[dir="rtl"] {
+  .main-banner {
+    background: url('../../imgs/banner-image2.png') no-repeat center center;
+
   }
 }
