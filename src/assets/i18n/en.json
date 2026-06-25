@@ -8,43 +8,42 @@
     "bookCall":"Book a Call"
   },
   "mainBanner":{
-    "title":"Expand your reach to customers anytime, anywhere, on any device",
-    "description":"Deliver seamless engagement across every channel and scenario — powered by our platform or yours",
-    "btn1":"Schedule a Demo",
-    "btn2":"Watch Video",
-    "info1":"No credit card required",
-    "info2":"Flexible pricing"
+    "title":"Launch Smarter Campaigns. Reach Every Customer. Drive Real Growth.",
+    "description":"Notify is the all-in-one CPaaS built for campaign management — empowering businesses to plan, execute, and optimize multi-channel campaigns across SMS, E-mail, Push Notifications, and Social messaging from a single, powerful platform.",
+    "btn1":"See how the platform works",
+    "btn2":"Book your free demo",
+    "info2":"Flexible prices to suit everyone"
   },
   "about":{
-    "titleSecondary":"Platform Applications",
-    "title":"Empowering businesses to grow, retain customers, and increase lifetime value with personalized omnichannel engagement",
-    "description":"Dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+    "titleSecondary":"About Notify",
+    "title":"The CPaaS Platform Built for Intelligent Campaign Management",
+    "description":"Notify is a comprehensive Communications Platform as a Service (CPaaS) purpose-built for end-to-end campaign management. From audience segmentation and campaign creation to delivery, tracking, and optimization — Notify gives businesses the complete toolkit to run high-performing campaigns across every channel. Whether you're sending targeted SMS promotions, automated email journeys, real-time push notifications, or interactive messages via WhatsApp Business and Telegram, Notify keeps all your campaigns connected under one intelligent platform. With AI-powered segmentation, built-in analytics, and flexible automation, businesses using Notify see measurable improvements in engagement rates, customer retention, and revenue — campaign after campaign."
   },
   "products":{
     "title":"Products",
     "productOne":{
       "title":"SMS",
-      "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures."
+      "description":"Run high-converting SMS campaigns that reach customers instantly, wherever they are. Notify's SMS campaign manager lets you segment audiences, schedule bulk sends, personalize every message, and track delivery and click-through rates in real time — ensuring every campaign drives measurable results."
     },
     "productTwo":{
       "title":"E-mail",
-      "description":"this a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using."
+      "description":"Design, automate, and optimize full-funnel email campaigns from a single dashboard. Notify's email campaign tools give you drag-and-drop builders, behavioral triggers, A/B testing, and advanced analytics — so you can send the right message to the right audience at the right time, every time."
     },
     "productThree":{
-      "title":"SMS",
-      "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures."
+      "title":"Social",
+      "description":"Expand your campaign reach to the social channels your customers trust most. Notify integrates with WhatsApp Business and Telegram to let you run interactive campaigns, broadcast promotions, automate responses, and engage in two-way conversations — turning social touchpoints into powerful campaign moments."
     },
     "productFour":{
-      "title":"SMS",
-      "description":"All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures."
+      "title":"Push Notifications",
+      "description":"Keep your audience engaged between campaigns with perfectly timed push notifications. Notify's push campaign engine supports rich media, deep links, behavioral segmentation, and smart scheduling — so you can re-engage users, recover abandoned journeys, and drive conversions with every notification sent."
     }
   },
   "pricing":{
     "title":"Pricing",
     "sms":"SMS",
-    "whatsApp":"WhatsApp",
+    "whatsApp":"Social",
     "email":"E-mail",
-    "webPush":"Web Push",
+    "webPush":"Push Notifications",
     "description":"Choose the perfect plan for your business needs",
     "buyNow":"Buy Now!",
     "planOne":{
@@ -78,17 +77,18 @@
   },
   "partners":{
     "title":"Partners",
-    "description":"The results speak for themselves — over 20 companies build with Notify"
+    "description":"Trusted by 20+ businesses across industries, Notify powers the campaign operations of brands that demand scale, precision, and performance. From startups launching their first campaigns to enterprises running omnichannel programs, our partners choose Notify to connect with customers and grow with confidence."
   },
   "demo":{
     "title":"Schedule a Demo",
     "titleSecondary":"Why Book a Demo",
-    "titleMain":"Enabling businesses to increase engagement and maximize their return on investment",
+    "titleMain":"See How Notify Can Elevate Your Campaign Management Strategy",
     "description":"Connect with our team to:",
-    "demoListOne":" Maximize your engagement ROI with ",
-    "demoListTwo":"Choose the right pricing plan for your business.",
-    "demoListThree":"Explore industry-specific use cases.",
-    "demoListFour":"Get expert answers to all your  ",
+    "demoListOne":"Get a live walkthrough of Notify's full campaign management suite across SMS, Email, Social, and Push.",
+    "demoListTwo":"See how AI-powered segmentation and automation help you launch campaigns faster with better results.",
+    "demoListThree":"Explore real campaign use cases from your industry and learn how to replicate them with Notify.",
+    "demoListFour":"Find the right plan for your campaign volume, team size, and growth objectives.",
+    "demoListFive":"Ask our campaign experts anything about onboarding, integrations, and maximizing your ROI.",
     "demoListFourQuestions":"questions.",
     "notify":"Notify",
     "form":{
