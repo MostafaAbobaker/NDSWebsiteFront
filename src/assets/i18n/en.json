@@ -10,8 +10,9 @@
   "mainBanner":{
     "title":"Launch Smarter Campaigns. Reach Every Customer. Drive Real Growth.",
     "description":"Notify is the all-in-one CPaaS built for campaign management — empowering businesses to plan, execute, and optimize multi-channel campaigns across SMS, E-mail, Push Notifications, and Social messaging from a single, powerful platform.",
-    "btn1":"See how the platform works",
-    "btn2":"Book your free demo",
+    "btn1":"Schedule a Demo",
+    "btn2":"Watch Video",
+    "info1":"No credit card required",
     "info2":"Flexible prices to suit everyone"
   },
   "about":{
@@ -84,8 +85,8 @@
     "titleSecondary":"Why Book a Demo",
     "titleMain":"See How Notify Can Elevate Your Campaign Management Strategy",
     "description":"Connect with our team to:",
-    "demoListOne":"Get a live walkthrough of Notify's full campaign management suite across SMS, Email, Social, and Push.",
-    "demoListTwo":"See how AI-powered segmentation and automation help you launch campaigns faster with better results.",
+    "demoListOne":"Get a live walkthrough of Notify's full campaign management suite across SMS, Email, Social, and Push",
+    "demoListTwo":"See how segmentation and automation help you launch campaigns faster with better results.",
     "demoListThree":"Explore real campaign use cases from your industry and learn how to replicate them with Notify.",
     "demoListFour":"Find the right plan for your campaign volume, team size, and growth objectives.",
     "demoListFive":"Ask our campaign experts anything about onboarding, integrations, and maximizing your ROI.",

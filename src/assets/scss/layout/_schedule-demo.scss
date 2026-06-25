@@ -21,7 +21,8 @@
   }
   ul {
     li {
-      margin-bottom: rem(4);
+      margin-bottom: rem(8);
+      display: flex;
       i {
         color: var(--primary-color);
         margin-inline-end: rem(9);
