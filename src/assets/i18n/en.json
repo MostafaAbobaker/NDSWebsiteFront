@@ -17,7 +17,7 @@
   "about":{
     "titleSecondary":"About Notify",
     "title":"The CPaaS Platform Built for Intelligent Campaign Management",
-    "description":"Notify is a comprehensive Communications Platform as a Service (CPaaS) purpose-built for end-to-end campaign management. From audience segmentation and campaign creation to delivery, tracking, and optimization — Notify gives businesses the complete toolkit to run high-performing campaigns across every channel. Whether you're sending targeted SMS promotions, automated email journeys, real-time push notifications, or interactive messages via WhatsApp Business and Telegram, Notify keeps all your campaigns connected under one intelligent platform. With AI-powered segmentation, built-in analytics, and flexible automation, businesses using Notify see measurable improvements in engagement rates, customer retention, and revenue — campaign after campaign."
+    "description":"Notify is a comprehensive Communications Platform as a Service (CPaaS) purpose-built for end-to-end campaign management. From audience segmentation and campaign creation to delivery, tracking, and optimization — Notify gives businesses the complete toolkit to run high-performing campaigns across every channel. Whether you're sending targeted SMS promotions, automated email journeys, real-time push notifications, or interactive messages via WhatsApp Business and Telegram, Notify keeps all your campaigns connected under one intelligent platform. With segmentation, built-in analytics, and flexible automation, businesses using Notify see measurable improvements in engagement rates, customer retention, and revenue — campaign after campaign."
   },
   "products":{
     "title":"Products",
