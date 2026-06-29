@@ -28,7 +28,7 @@
     .nav-link {
       border-radius: rem(100);
       font-weight: 600;
-      width: rem(120);
+      width: rem(100);
       border: none;
       display: block;
       z-index: 2;
@@ -60,12 +60,19 @@
         color: var(--gray-90-color);
       }
     }
+    .nav-item {
+      &:nth-child(4) {
+        .nav-link {
+          min-width: rem(180) ;
+        }
+      }
+    }
   }
   .glider {
     position: absolute;
     display: flex;
     height: rem(40);
-    width: rem(120);
+    width: rem(100);
     background-color:  var(--primary-color);;
     z-index: 1;
     border-radius: 99px;
@@ -95,7 +102,8 @@
         transform: translateX(200%);
   }
   .nav-tabs:has(.nav-item:nth-child(4) .active)  .glider  {
-        transform: translateX(300%);
+    transform: translateX(156%);
+    width: rem(190);
   }
   .card {
     background-color: var(--gray-10-color);
@@ -180,7 +188,14 @@
 [dir="rtl"] {
   .pricing {
     .nav-link{
-width: rem(140);
+      width: rem(140);
+    }
+    .nav-item {
+      &:nth-child(4) {
+        .nav-link{
+          width: rem(180) !important;
+        }
+      }
     }
     .glider {
       width: rem(140);
@@ -196,6 +211,7 @@ width: rem(140);
   }
   .nav-tabs:has(.nav-item:nth-child(4) .active)  .glider  {
         transform: translateX(-300%);
+        width: rem(180);
   }
   .card {
     h4 {
