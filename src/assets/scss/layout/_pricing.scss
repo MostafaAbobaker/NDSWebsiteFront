@@ -38,13 +38,13 @@
       color: var(--gray-90-color);
       @media #{$max-sm}{
         width: auto;
-      font-size: rem(16);
+        font-size: rem(13);
       }
 
       @media #{$max-xsm}{
-      font-size: rem(16);
-      width: auto;
-      padding-inline: rem(9);
+        font-size: rem(13);
+        width: auto;
+        padding-inline: rem(9);
       }
       &.active {
         /* background-color: var(--primary-color);*/
@@ -63,7 +63,7 @@
     .nav-item {
       &:nth-child(4) {
         .nav-link {
-          min-width: rem(180) ;
+        width: rem(180) ;
         }
       }
     }
@@ -187,18 +187,22 @@
 
 [dir="rtl"] {
   .pricing {
+
     .nav-link{
-      width: rem(140);
+      width: rem(135);
     }
     .nav-item {
       &:nth-child(4) {
-        .nav-link{
-          width: rem(180) !important;
+        .nav-link {
+          width: rem(135) ;
+          @media #{$max-md}  {
+            width: rem(115) ;
+          }
         }
       }
     }
     .glider {
-      width: rem(140);
+      width: rem(135);
     }
     .nav-tabs:has(.nav-item:first-child .active)  .glider  {
         transform: translateX(0%);
@@ -210,9 +214,31 @@
         transform: translateX(-200%);
   }
   .nav-tabs:has(.nav-item:nth-child(4) .active)  .glider  {
-        transform: translateX(-300%);
-        width: rem(180);
+            transform: translateX(-300%);
+            width: rem(135);
   }
+
+.nav-tabs {
+      @media #{$max-sm}{
+        display: flex;
+        justify-content: space-around;
+        .nav-item {
+          flex: 0 0 50%;
+        }
+        .nav-link{
+          width: 100% !important;
+          &.active {
+                background-color:  var(--primary-color);;
+                color: var(--white-color);
+
+          }
+          text-align: center;
+        }
+        .glider {
+          display: none;
+        }
+      }
+    }
   .card {
     h4 {
       font-weight: 700;
