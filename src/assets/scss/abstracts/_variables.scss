@@ -18,7 +18,7 @@ $primary-color-x-light: color.adjust($primary-color, $lightness: 45%);
 //$primary-color-dark: darken($primary-color, 5%);
 $primary-color-dark: color.adjust($primary-color, $lightness: -30%);
 //$primary-color-x-dark: darken($primary-color, 15%);
-$primary-color-x-dark: color.adjust($primary-color, $lightness: -15%);
+$primary-color-x-dark: color.adjust($primary-color, $lightness: -35%);
 $secondary-color: #313a46;
 //$secondary-color-dark: darken($secondary-color, 10%);
 $secondary-color-dark: color.adjust($secondary-color, $lightness: -10%);

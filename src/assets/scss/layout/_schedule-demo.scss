@@ -1,5 +1,6 @@
 @use '../abstracts' as *;
 .schedule-demo{
+  position: relative;
   // padding-block: rem(70) ;
   @media #{$max-l} {
     text-align: center;
