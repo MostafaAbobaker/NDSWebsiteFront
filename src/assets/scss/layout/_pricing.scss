@@ -222,7 +222,7 @@
       width: rem(135);
     }
     .nav-item {
-      &:nth-child(4) {
+      &:nth-child(3) {
         .nav-link {
           width: rem(135) ;
           @media #{$max-md}  {
@@ -238,13 +238,14 @@
         transform: translateX(0%);
   }
   .nav-tabs:has(.nav-item:nth-child(2) .active)  .glider  {
-        transform: translateX(-100%);
+        transform: translateX(-90%);
+        width: rem(145);
   }
-  .nav-tabs:has(.nav-item:nth-child(3) .active)  .glider  {
+  /* .nav-tabs:has(.nav-item:nth-child(3) .active)  .glider  {
         transform: translateX(-200%);
-  }
-  .nav-tabs:has(.nav-item:nth-child(4) .active)  .glider  {
-            transform: translateX(-300%);
+  } */
+  .nav-tabs:has(.nav-item:nth-child(3) .active)  .glider  {
+            transform: translateX(-200%);
             width: rem(135);
   }
 
