@@ -4,7 +4,6 @@ import { FooterComponent } from "../../shared/component/footer/footer.component"
 import { PlatformApplicationsComponent } from '../../features/pages/home/platform-applications/platform-applications.component';
 import { ProductsComponent } from '../../features/pages/home/products/products.component';
 import { PricingComponent } from '../../features/pages/home/pricing/pricing.component';
-import { PartnersComponent } from '../../features/pages/home/partners/partners.component';
 import { ScheduleDemoComponent } from "../../features/pages/home/schedule-demo/schedule-demo.component";
 import { MainBannerComponent } from '../../features/pages/home/main-banner/main-banner.component';
 
@@ -16,7 +15,7 @@ import { MainBannerComponent } from '../../features/pages/home/main-banner/main-
     PlatformApplicationsComponent,
     ProductsComponent,
     PricingComponent,
-    PartnersComponent, ScheduleDemoComponent],
+     ScheduleDemoComponent],
   templateUrl: './layout.component.html',
   styleUrl: './layout.component.scss'
 })

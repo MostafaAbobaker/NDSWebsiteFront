@@ -3,90 +3,67 @@
 
           <h2 class="text-center title-main-page"><span>{{"pricing.title" | translate}}</span></h2>
 
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">{{"pricing.sms" | translate}}</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">{{"pricing.email" | translate}}</button>
         </li>
-        <!-- <li class="nav-item" role="presentation">
+        <li class="nav-item" role="presentation">
           <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">{{"pricing.whatsApp" | translate}}</button>
-        </li> -->
+        </li>
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >{{"pricing.webPush" | translate}}</button>
         </li>
         <span class="glider"></span>
-      </ul>
+      </ul> -->
       <p class="text-center ">{{"pricing.description" | translate}}</p>
         </div>
 
   <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <div class="col-xl-4 col-md-6 col-sm-12">
-          <div class="card">
-            <h4>{{"pricing.planOne.title" | translate}}</h4>
-            <div class="price-number">
-              <span class="number">
-                $26.99
-              </span>
-               <span>/{{"pricing.planOne.month" | translate}}</span>
-            </div>
-            <ul>
-              <li> {{"pricing.planOne.listOne" | translate}}</li>
-              <li>  {{"pricing.planOne.listTwo" | translate}}</li>
-              <li>  {{"pricing.planOne.listThree" | translate}}</li>
-              <li>  {{"pricing.planOne.listFour" | translate}}</li>
-              <li>   {{"pricing.planOne.listFive" | translate}}</li>
-            </ul>
-            <button class="btn btn-primary d-block  btn-lg">{{"pricing.buyNow" | translate}}</button>
-          </div>
+    <div class="container p-0">
+       <!-- Unified Single Card Block -->
+    <div class="pricing-card">
+
+      <!-- Overlay Ribbon Layer -->
+      <div class="enterprise-ribbon">Enterprise</div>
+
+      <!-- Combined Feature Grid List -->
+      <ul class="feature-grid">
+        <div class="group-list">
+          <li>SMS Notification</li>
+          <li>E-mail</li>
+          <li>Push Notifications</li>
+          <li>Personalization</li>
         </div>
-        <div class="col-xl-4 col-md-6 col-sm-12">
-          <div class="card best-price">
-            <span class="label-text">{{"pricing.planTwo.popular" | translate}}</span>
-            <h4>{{"pricing.planTwo.title" | translate}}</h4>
-            <div class="price-number">
-              <span class="number">
-                $44
-              </span>
-               <span>/{{"pricing.planTwo.month" | translate}}</span>
-            </div>
-            <ul>
-              <li> {{"pricing.planTwo.listOne" | translate}}</li>
-              <li>  {{"pricing.planTwo.listTwo" | translate}}</li>
-              <li>  {{"pricing.planTwo.listThree" | translate}}</li>
-              <li>  {{"pricing.planTwo.listFour" | translate}}</li>
-              <li>   {{"pricing.planTwo.listFive" | translate}}</li>
-            </ul>
-            <button class="btn btn-light text-primary d-block  btn-lg">{{"pricing.buyNow" | translate}}</button>
-          </div>
+        <div class="group-list">
+          <li>Verification Model</li>
+          <li>Unlimited Customer Journeys</li>
+          <li>Advanced Analytics</li>
+          <li>Customer Data Management</li>
+
         </div>
-        <div class="col-xl-4 col-md-6 col-sm-12">
-          <div class="card">
-            <h4>{{"pricing.planThree.title" | translate}}</h4>
-            <div class="price-number">
-              <span class="number">
-                $92
-              </span>
-               <span>/ {{"pricing.planThree.month" | translate}}</span>
-            </div>
-            <ul>
-              <li> {{"pricing.planThree.listOne" | translate}}</li>
-              <li>  {{"pricing.planThree.listTwo" | translate}}</li>
-              <li>  {{"pricing.planThree.listThree" | translate}}</li>
-              <li>  {{"pricing.planThree.listFour" | translate}}</li>
-              <li>   {{"pricing.planThree.listFive" | translate}}</li>
-            </ul>
-            <button class="btn btn-primary d-block  btn-lg">{{"pricing.buyNow" | translate}}</button>
-          </div>
+        <div class="group-list">
+
+          <li>Hyper Personalization</li>
+          <li>Product Recommendation</li>
+          <li>Campaign Manager</li>
+          <li>User Role Management</li>
         </div>
-      </div>
+      </ul>
+      <!-- Pricing Section -->
+       <div class="row justify-content-center">
+        <div class="col-md-4">
+
+          <button class="btn btn-primary d-block  btn-lg w-100">Let's Talk</button>
+        </div>
+       </div>
+    </div>
     </div>
   </div>
-  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+  <!-- <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
      <div class="container">
       <div class="row g-4 justify-content-center">
         <div class="col-xl-4 col-md-6 col-sm-12">
@@ -149,8 +126,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+  </div> -->
+  <!-- <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
     <div class="container">
       <div class="row g-4 justify-content-center">
         <div class="col-xl-4 col-md-6 col-sm-12">
@@ -213,8 +190,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"><div class="container">
+  </div> -->
+  <!-- <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0"><div class="container">
       <div class="container">
       <div class="row g-4 justify-content-center">
         <div class="col-xl-4 col-md-6 col-sm-12">
@@ -277,7 +254,8 @@
         </div>
       </div>
     </div>
-    </div></div>
+    </div>
+  </div> -->
 </div>
 
 </section>

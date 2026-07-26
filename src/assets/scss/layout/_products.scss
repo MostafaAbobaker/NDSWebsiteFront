@@ -38,6 +38,24 @@
     box-shadow: var(--box-shadow);
     border-radius: $radius-lg;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    .coming-soon{
+      position: absolute;
+        text-transform: uppercase;
+        background-color: $primary-color;
+        color: $white-color;
+        font-size: rem(14);
+        text-wrap: nowrap;
+        font-weight: 600;
+        padding: rem(5) rem(15);
+        inset-inline-end: rem(-40);
+        transform: rotate(45deg);
+        padding-inline: rem(50);
+        top: 35px;
+        // inset-inline-end: -55px;
+        width: 200px;
+    }
     img {
       margin-bottom: rem(26);
       object-fit:cover;
