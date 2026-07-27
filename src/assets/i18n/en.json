@@ -22,6 +22,7 @@
   },
   "products":{
     "title":"Products",
+    "comingSoon":"Coming Soon",
     "productOne":{
       "title":"SMS",
       "description":"Run high-converting SMS campaigns that reach customers instantly, wherever they are. Notify's SMS campaign manager lets you segment audiences, schedule bulk sends, personalize every message, and track delivery and click-through rates in real time — ensuring every campaign drives measurable results."
@@ -47,6 +48,23 @@
     "webPush":"Push Notifications",
     "description":"Choose the perfect plan for your business needs",
     "buyNow":"Buy Now!",
+    "newWork" :{
+      "title":"Enterprise",
+      "listOne":"SMS Notification",
+      "listTwo":"E-mail",
+      "listThree":"Push Notifications",
+      "listFour":"Personalization",
+      "listFive":"Verification Model",
+      "listSix":"Unlimited Customer Journeys",
+      "listSeven":"Advanced Analytics",
+      "listEight":"Customer Data Management",
+      "listNine":"Hyper Personalization",
+      "listTen":"Product Recommendation",
+      "listEleven":"Campaign Manager",
+      "listTwelve":"User Role Management",
+      "label":"Let's Talk"
+
+    },
     "planOne":{
       "title":"Standard",
       "month":"month",
