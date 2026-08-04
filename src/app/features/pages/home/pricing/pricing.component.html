@@ -3,22 +3,8 @@
 
           <h2 class="text-center title-main-page"><span>{{"pricing.title" | translate}}</span></h2>
 
-          <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">{{"pricing.sms" | translate}}</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">{{"pricing.email" | translate}}</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">{{"pricing.whatsApp" | translate}}</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >{{"pricing.webPush" | translate}}</button>
-        </li>
-        <span class="glider"></span>
-      </ul> -->
-      <p class="text-center ">{{"pricing.description" | translate}}</p>
+
+          <p class="text-center ">{{"pricing.description" | translate}}</p>
         </div>
 
   <div class="tab-content" id="myTabContent">
@@ -57,7 +43,8 @@
        <div class="row justify-content-center">
         <div class="col-md-4">
 
-            <button class="btn btn-primary d-block  btn-lg w-100">{{"pricing.newWork.label" | translate}}</button>
+            <a class="btn btn-primary d-block  btn-lg w-100" routerLink="/bookCall" fragment="bookCall"
+          (click)="setActive($event)">{{"pricing.newWork.label" | translate}}</a>
           </div>
        </div>
     </div>

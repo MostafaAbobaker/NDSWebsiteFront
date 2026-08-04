@@ -3,7 +3,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
-  imports: [TranslatePipe],
+  imports: [TranslatePipe,],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
