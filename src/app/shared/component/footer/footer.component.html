@@ -23,10 +23,11 @@
       <div class="col-lg-4">
         <h4>{{"footer.quickLinks" | translate}}</h4>
         <ul class="nav-links">
-          <li><a href="#">{{"footer.about" | translate}}</a></li>
-          <li><a href="#">{{"footer.products" | translate}}</a></li>
-          <li><a href="#">{{"footer.pricing" | translate}}</a></li>
-          <li><a href="#">{{"footer.partners" | translate}}</a></li>
+          <li><a  routerLink="/home" fragment="home" (click)="setActive($event)">{{"footer.home" | translate}}</a></li>
+          <li><a  routerLink="/about" fragment="about" (click)="setActive($event)">{{"footer.about" | translate}}</a></li>
+          <li><a  routerLink="/products" fragment="products" (click)="setActive($event)">{{"footer.products" | translate}}</a></li>
+          <li><a  routerLink="/pricing" fragment="pricing" (click)="setActive($event)">{{"footer.pricing" | translate}}</a></li>
+          <!-- <li><a href="#">{{"footer.partners" | translate}}</a></li> -->
         </ul>
       </div>
       <div class="col-lg-4">
